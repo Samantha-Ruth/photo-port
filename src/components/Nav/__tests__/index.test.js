@@ -11,9 +11,18 @@ describe('Nav component', () => {
       });
 
     // Second Test
-    it('matches snapshot DOM node structure', () => {
+    it('matches snapshot', () => {
         // render Nav
         const { asFragment } = render(<Nav />);
         expect(asFragment()).toMatchSnapshot();
       });
 })
+
+describe('emoji is visible', () => {
+        // Arrange
+        it('inserts emoji into the h2', () => {
+            const { getByLabelText } = render(<Nav />);
+        // Assert
+        expect(getByLabelText('camera')).toHaveTextContent('📸');
+        });
+    })
