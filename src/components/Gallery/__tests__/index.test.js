@@ -3,7 +3,7 @@ import React from 'react'
 import { render, cleanup } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 import Gallery from '..'
-const portrait = { name: "portraits", description: "Portraits of people in my life" };
+const portrait = { name: "Portraits", description: "Portraits of people in my life" };
 
 afterEach(cleanup)
 
@@ -21,5 +21,5 @@ describe('Gallery component', () => {
 
 it('renders', () => {
   const { getByTestId } = render(<Gallery currentCategory={portrait} />)
-  expect(getByTestId ('h2tag')).toHaveTextContent('Portraits')
+  expect(getByTestId ('h1tag')).toHaveTextContent('Portraits')
 })
