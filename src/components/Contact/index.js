@@ -13,8 +13,11 @@ function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formState);
-  }
+    if (!errorMessage) {
+        setFormState({ [e.target.name]: e.target.value })
+        console.log(formState);
+    }
+  };
 
   function handleChange(e) {
     if (e.target.name === "email") {
@@ -31,11 +34,12 @@ function ContactForm() {
         setErrorMessage("");
       }
     }
-    console.log("errorMessage", errorMessage);
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-    }
-  }
+    // console.log("errorMessage", errorMessage);
+    // if (!errorMessage) {
+    //   setFormState({ ...formState, [e.target.name]: e.target.value });
+    // }
+  };
+  
   return (
     <section>
       <h1>Contact me</h1>

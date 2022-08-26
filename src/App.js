@@ -33,6 +33,7 @@ function App() {
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       ></Nav>
+      <main>
       {!contactSelected ? (
         <>
           <Gallery currentCategory={currentCategory}></Gallery>
@@ -41,6 +42,7 @@ function App() {
       ) : (
         <ContactForm></ContactForm>
       )}
+      </main>
     </div>
   );
 }
