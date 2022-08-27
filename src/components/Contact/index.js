@@ -39,11 +39,11 @@ function ContactForm() {
     //   setFormState({ ...formState, [e.target.name]: e.target.value });
     // }
   };
-  
+
   return (
     <section>
-      <h1>Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <h1 data-testid='h1tag'>Contact me</h1>
+      <form data-testid="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input 
@@ -76,7 +76,7 @@ function ContactForm() {
                 <p className='error-text'>{errorMessage}</p>
             </div>
         )}
-        <button type="submit">Submit</button>
+        <button data-testid='button' type="submit">Submit</button>
       </form>
     </section>
   );
