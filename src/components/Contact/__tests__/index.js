@@ -2,7 +2,7 @@
 import React from 'react'
 import { render, cleanup } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
-import Contact from '..'
+import Contact from '../index'
 
 afterEach(cleanup)
 
@@ -11,19 +11,19 @@ describe('Contact component renders', () => {
   render(<Contact />);
 });
 
-  it('matches snapshot', () => {
+  it('Matches Snapshot', () => {
     const { asFragment } = render(<Contact />)
     expect(asFragment()).toMatchSnapshot()
   })
 })
 
 
-it('renders', () => {
+it('text in h1 matches Contact Me', () => {
   const { getByTestId } = render(<Contact />)
   expect(getByTestId('h1tag')).toHaveTextContent('Contact me')
 })
  
-it('renders', () => {
+it('text in button matches Submit', () => {
   const { getByTestId } = render(<Contact />)
   expect(getByTestId('button')).toHaveTextContent('Submit')
 })

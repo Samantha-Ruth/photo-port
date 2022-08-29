@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Contact component renders matches snapshot 1`] = `
+exports[`Contact component renders Matches Snapshot 1`] = `
 <DocumentFragment>
   <section>
     <h1
@@ -9,7 +9,7 @@ exports[`Contact component renders matches snapshot 1`] = `
       Contact me
     </h1>
     <form
-      data-testid="contact-form"
+      id="contact-form"
     >
       <div>
         <label

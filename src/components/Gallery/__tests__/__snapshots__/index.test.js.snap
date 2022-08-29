@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Gallery component matches snapshot 1`] = `
+exports[`Gallery is rendering Matches Snapshot 1`] = `
 <DocumentFragment>
   <section>
     <h1
@@ -14,7 +14,24 @@ exports[`Gallery component matches snapshot 1`] = `
     <div>
       <div
         class="flex-row"
-      />
+      >
+        <img
+          alt="Cat green eyes"
+          class="img-thumbnail mx-1"
+        />
+        <img
+          alt="Green parrot"
+          class="img-thumbnail mx-1"
+        />
+        <img
+          alt="Yellow macaw"
+          class="img-thumbnail mx-1"
+        />
+        <img
+          alt="Pug smile"
+          class="img-thumbnail mx-1"
+        />
+      </div>
     </div>
   </section>
 </DocumentFragment>

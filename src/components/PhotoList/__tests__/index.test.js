@@ -1,13 +1,12 @@
-// __tests__/Gallery.test.js
+// __tests__/PhotoList.test.js
 import React from 'react'
 import { render, cleanup } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
-import PhotoList from '..'
+import PhotoList from '../index'
 
 afterEach(cleanup)
 
-describe('PhotoList component', () => {
-    
+describe('PhotoList is rendering', () => {
   it('renders', () => {
     render(<PhotoList />);
   });
@@ -15,10 +14,5 @@ describe('PhotoList component', () => {
   it('matches snapshot', () => {
     const { asFragment } = render(<PhotoList />)
     expect(asFragment()).toMatchSnapshot()
-  })
+  });
 });
-
-// it('renders', () => {
-//   const { getByTestId } = render(<Gallery currentCategory={portrait} />)
-//   expect(getByTestId ('h2tag')).toHaveTextContent('Portraits')
-// })
