@@ -2,21 +2,29 @@
 
 ## Description
 
-This project's goal was to create a personal portfolio using React, the create-react-app package, the react testing library, and run gests using the Jest-Dom. 
+This project's goal was to create a professional photographer's portfolio using React, the create-react-app package, the react testing library, and run gests using the Jest-Dom. 
 
-When the user searches a book, the application will come up with a list of books based on that search from a Google API. When the user clicks on a book,  they should be able to see details about the book. 
+When the user visits the page, the application will render sample photography from the artist.  The user is presented with a navigation bar.
 
 ![Screen Shot 2022-09-19 at 6 40 25 PM](https://user-images.githubusercontent.com/64170123/191142924-e15205f3-cdb4-4830-93e6-1c4f5fa20f83.png)
 
-The user also has ability to log into the app.  When they do, they can save books they have searched and view the books they have saved in the application as well as delete books from their saved list. 
+When they click on "About Me", the application will relocated to information about the artist on the page.
 
 
 ![Screen Shot 2022-09-19 at 6 41 12 PM](https://user-images.githubusercontent.com/64170123/191142939-5c6e36bd-094b-46c0-b112-f8fc999c79ee.png)
-![Screen Shot 2022-09-19 at 6 41 27 PM](https://user-images.githubusercontent.com/64170123/191142945-e40eda5d-7ff7-4a5c-bdce-3e306dd4c4fc.png)
+
+When they click on different genres of photos on the navigation bar, portfolio sections with each genre category will render.  
+
 ![Screen Shot 2022-09-19 at 6 41 51 PM](https://user-images.githubusercontent.com/64170123/191142946-766da84f-1717-4ab0-8909-457390e6473d.png)
 
 
-The application helped me to learn how the MERN stack works with GraphQL.  It helped me learn how to build typeDef files, and resolvers composed of queries and mutations.  I practiced using the Apollo Studio Explorer to verify queries and mutations worked as expected, and transferred all previous api routes and controllers over to queries and mutations on the backside, as well as building the Apollo Server.  Once this was complete, I worked on refactoring the client side. 
+When the user clicks on the Contact Me link, a contact form will render with a form to enter information. 
+
+
+![Screen Shot 2022-09-19 at 6 41 27 PM](https://user-images.githubusercontent.com/64170123/191142945-e40eda5d-7ff7-4a5c-bdce-3e306dd4c4fc.png)
+
+
+The application helped me to develop my first app using React.  I learned how to develop components and to write in JSX to have components render in the App.js. 
 
 ## Deployment
 
