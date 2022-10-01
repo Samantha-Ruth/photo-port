@@ -2,7 +2,7 @@
 
 ## Description
 
-This project's goal was to create a professional photographer's portfolio using React, the create-react-app package, the react testing library, and run gests using the Jest-Dom. 
+This project's goal was to create a professional photographer's portfolio using React, the create-react-app package, the react testing library, and run tests using the Jest-Dom. 
 
 When the user visits the page, the application will render sample photography from the artist.  The user is presented with a navigation bar.
 
